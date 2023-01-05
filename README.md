@@ -1,5 +1,3 @@
-# gcp-certification
-
 - Certificação Google Cloud Associate Engineer (GCP)
 
 ## História sobre a Google Cloud Platform:
