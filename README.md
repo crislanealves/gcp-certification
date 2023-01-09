@@ -40,8 +40,9 @@ x. Os recursos de zona só podem ser usados por recursos na mesma zona.
 
 x. Colocar recursos em diferentes zonas de uma região reduz o risco de interrupção da infraestrutura que afeta todos os recursos simultaneamente. Já a distribuição entre diferentes regiões garante um nível ainda mais elevado de independência em relação a falhas. Isso permite projetar sistemas robustos com recursos espalhados por diferentes domínios de falhas.
 
-x. Toda estrutura de Network (redes, cabos físicos) da Google são privados, ou seja, pertecem a Google. 
+x.As sub-redes se estendem por zonas em uma região. Isso é exclusivo do Google Cloud e diferente dos demais fornecedores. Com isso, é mais fácil criar confiabilidade porque instâncias adjacentes podem estar em zonas diferentes na mesma sub-rede, permitindo o isolamento de falhas.
 
+x. Toda estrutura de Network (redes, cabos físicos) da Google são privados, ou seja, pertecem a Google. 
 
 Referencias:
 
