@@ -126,3 +126,11 @@ x. Classes de armazenamento Google Cloud:
 	- Archive: Armazenamento de arquivo que serão acessado após 365 dias. O mais barato de todos. 
 
 As recomendações de dias são feitas por conta do sistema retrieval. Retrieval em poucas palavras é o custo da movimentação do arquivo. Por exemplo, objetos armazenados na classe standard tem um retrieval alto, já em archive o retrieval é baixo. O valor no archive é mais baixo já que, uma vez que a movimentação é baixa, o Google Cloud armazenará esses arquivos em uma localização mais barata, um data center mais barato, com hardware mais barato. 
+
+## BigQuery
+
+x. O BigQuery é chamado de armazenamento em colunas, ou seja, ele foi projetado para processar colunas, não linhas. 
+
+x. O processamento de colunas é barato e rápido, e o processamento de linhas é lento e caro. 
+
+x. A maioria das consultas funciona apenas em um pequeno número de campos, e o BigQuery só precisa ler as colunas relevantes para executar uma consulta. Como cada coluna tem dados do mesmo tipo, o BigQuery pode compactar os dados da coluna com muito mais eficiência.
