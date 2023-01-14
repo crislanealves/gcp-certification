@@ -127,6 +127,9 @@ x. Classes de armazenamento Google Cloud:
 
 As recomendações de dias são feitas por conta do sistema retrieval. Retrieval em poucas palavras é o custo da movimentação do arquivo. Por exemplo, objetos armazenados na classe standard tem um retrieval alto, já em archive o retrieval é baixo. O valor no archive é mais baixo já que, uma vez que a movimentação é baixa, o Google Cloud armazenará esses arquivos em uma localização mais barata, um data center mais barato, com hardware mais barato. 
 
+O Cloud Storage é persistente. Você já deve conhecer os métodos de controle de acesso granular do Storage, como os papéis do IAM e os URLs assinados. O Cloud Storage tem muitos recursos que as pessoas não conhecem. Muita gente acaba duplicando a função no código quando deveria usar o recurso que já está disponível. Por exemplo, mudança da classe de armazenamento, streaming, controle de versões e várias opções de criptografia. Você também pode automatizar alguns recursos usando o gerenciamento de ciclo de vida. Por exemplo, alterar a classe de armazenamento de um objeto ou excluir o objeto após um período.
+
+
 ## BigQuery
 
 x. O BigQuery é chamado de armazenamento em colunas, ou seja, ele foi projetado para processar colunas, não linhas. 
@@ -134,3 +137,15 @@ x. O BigQuery é chamado de armazenamento em colunas, ou seja, ele foi projetado
 x. O processamento de colunas é barato e rápido, e o processamento de linhas é lento e caro. 
 
 x. A maioria das consultas funciona apenas em um pequeno número de campos, e o BigQuery só precisa ler as colunas relevantes para executar uma consulta. Como cada coluna tem dados do mesmo tipo, o BigQuery pode compactar os dados da coluna com muito mais eficiência.
+
+## Cloud SQL
+
+O Cloud SQL é o serviço gerenciado que oferece instâncias do MySQL. Há várias formas de criar conexões seguras com instâncias do Cloud SQL. É importante conhecer as diversas abordagens e vantagens que elas oferecem. O Cloud SQL é adequado para quem não precisa de mais de um banco de dados.
+
+## Cloud Bigtable
+
+O Cloud Bigtable serve para dados de alta capacidade. A latência dele é de alguns milissegundos, muito mais rápido que o BigQuery. Por ser NoSQL, ele é ideal para armazenar dados em colunas. Quando você usaria um SSD para as máquinas no cluster em vez de HDD? Quando você precisasse de mais velocidade.
+As tabelas do Bigtable são altas e estreitas. Este exemplo mostra uma ação da bolsa em cada linha. O resultado serão milhões de linhas por dia, o que não é um problema para o Bigtable. 
+
+
+
