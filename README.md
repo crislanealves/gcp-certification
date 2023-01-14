@@ -148,4 +148,12 @@ O Cloud Bigtable serve para dados de alta capacidade. A latência dele é de alg
 As tabelas do Bigtable são altas e estreitas. Este exemplo mostra uma ação da bolsa em cada linha. O resultado serão milhões de linhas por dia, o que não é um problema para o Bigtable. 
 
 
+## Cloud Spanner
+
+x. O Cloud Spanner tem tipo forte e consistência global. O que o diferencia do Cloud SQL é a consistência das transações e o tamanho. O Cloud Spanner trabalha com bancos de dados muito maiores que o Cloud SQL.
+
+x. O Cloud Spanner é uma ótima opção para quem precisa de vários bancos de dados. O MySQL tem um limite de desempenho. Observando o 99º percentil de latência, está claro que o desempenho cai. Distribuir o MySQL é difícil. Já o Spanner tem uma distribuição fácil e global, além de permitir adicionar mais nós para aumentar a capacidade e manter o desempenho consistente.
+
+
+
 
