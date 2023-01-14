@@ -154,6 +154,11 @@ x. O Cloud Spanner tem tipo forte e consistência global. O que o diferencia do 
 
 x. O Cloud Spanner é uma ótima opção para quem precisa de vários bancos de dados. O MySQL tem um limite de desempenho. Observando o 99º percentil de latência, está claro que o desempenho cai. Distribuir o MySQL é difícil. Já o Spanner tem uma distribuição fácil e global, além de permitir adicionar mais nós para aumentar a capacidade e manter o desempenho consistente.
 
+## Cloud Datastores
+
+O Cloud Datastore é uma solução NoSQL que era exclusiva do App Engine. Ele tem recursos úteis para aplicativos, como informações de persistência de estado. E agora está disponível para outros clientes além do App Engine.
+
+
 
 
 
