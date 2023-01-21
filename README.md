@@ -61,7 +61,7 @@ x. Os recursos do Google Cloud são organizados hierarquicamente. A Hierarquia d
 	- Organização: é o topo da hierarquia de recursos do Google Cloud. Não é obrigatória apesar de que alguns recursos do Resource Manager não poderão ser usados sem uma.
 
 
-	- Pastas: São um mecanismo de agrupamento adicional e opcional entre os recursos da organização e do projeto. É obrigatório ter uma organização para usar pastas (ou seja, só é possível criar pastas dentro de organizações).
+	- Pastas: São um mecanismo de agrupamento adicional e opcional entre os recursos da organização e do projeto. É obrigatório ter uma organização para usar pastas (ou seja, só é possível criar pastas dentro de organizações). As pastas traçam bem a estrutura da organização. É uma forma de isolar organizações, usuários ou produtos, mas ainda deixar que eles compartilhem recursos corporativos e de cobranças.
 	
 	- Projetos:  É a entidade organizadora de nível base. Organização e pastas podem conter vários projetos. É necessário ter um projeto para:
 	
