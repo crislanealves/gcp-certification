@@ -141,9 +141,12 @@ O Cloud Storage é persistente. Você já deve conhecer os métodos de controle 
 
 x. O BigQuery é chamado de armazenamento em colunas, ou seja, ele foi projetado para processar colunas, não linhas. 
 
-x. O processamento de colunas é barato e rápido, e o processamento de linhas é lento e caro. 
+x. O processamento de colunas é barato e rápido e o processamento de linhas é lento e caro. 
 
-x. A maioria das consultas funciona apenas em um pequeno número de campos, e o BigQuery só precisa ler as colunas relevantes para executar uma consulta. Como cada coluna tem dados do mesmo tipo, o BigQuery pode compactar os dados da coluna com muito mais eficiência.
+x. A maioria das consultas funciona apenas em um pequeno número de campos e o BigQuery só precisa ler as colunas relevantes para executar uma consulta. Como cada coluna tem dados do mesmo tipo, o BigQuery pode compactar os dados da coluna com muito mais eficiência.
+
+x. Sobre permissões no BQ:
+	x. O acesso ao BigQuery é controlado no nível do conjunto de dados. Então você não pode bloquear um usuário em tabelas específicas no conjunto de dados, mas também não precisa dar a ele acesso a todos os recursos em um projeto.
 
 ## Cloud SQL
 
