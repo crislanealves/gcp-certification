@@ -111,6 +111,12 @@ Gcloud | cheat-sheet: https://cloud.google.com/static/sdk/docs/images/gcloud-che
 
 Gcloud | cheat-sheet 2 :https://mishnit.github.io/cheatsheet-gcp-A4.pdf
 
+## IAM
+
+x. Uma política é definida em um recurso, e cada política contém uma série de papéis e membros. Os recursos herdam as políticas das instâncias primárias. Então uma política pode ser definida em um recurso, como um serviço, e outra política pode ser criada em uma instância primária, como um projeto que contém aquele serviço. A política final é a união da política primária e da política do recurso. 
+
+x. O que acontece quando essas duas políticas estão em conflito? E se a política no recurso conceder acesso a apenas um único bucket do Cloud Storage e restringir o acesso a todos os outros buckets? Porém, no nível do projeto, há uma regra que dá acesso a todos os buckets no projeto. Qual regra vence? **A mais restritiva no recurso ou a mais geral no projeto?** **Se uma política primária é menos restritiva, ela substitui a mais restritiva do recurso**. **Nesse caso, a política do projeto vence**.
+
 
 ## Google Storage 
 
