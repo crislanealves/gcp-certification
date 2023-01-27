@@ -9,53 +9,29 @@ O NIST dos EUA criou o termo "computação em nuvem", mas ela existe em muitos p
 4. Os recursos são flexíveis, como as necessidades dos clientes. Eles podem acessar novos recursos rapidamente. Eles também podem diminuí-los.
 5. E por fim, os clientes pagam apenas o que usam conforme a necessidade. Eles não pagam por recursos que não usam.
 
-E pronto. Essa é a definição de nuvem.
-
-Mas por que o modelo de nuvem é tão atraente? Vamos voltar no tempo para entender.
+E pronto. Essa é a definição de nuvem. Mas por que o modelo de nuvem é tão atraente? Vamos voltar no tempo para entender.
  
 A tendência da computação em nuvem começou com um recurso chamado _colocation_. Ele oferecia a eficiência financeira de alugar data centers físicos como alternativa de investir em um. Os data centers virtualizados que existem hoje têm semelhanças com os data centers e as instalações de _colocation_ daquela época.
 
 Os data centers virtualizados têm os elementos fundamentais da computação hospedada, como servidores, CPUs, discos e balanceadores de carga, mas são dispositivos virtuais. Com a virtualização, as empresas mantêm a infraestrutura mas o ambiente é controlado e configurado pelos usuários.
  
-Há alguns anos, o Google percebeu que não poderia crescer rapidamente usando um modelo de virtualização.
- 
-Migramos para uma arquitetura baseada em contêiner, com uma nuvem automatizada e flexível. Ela combina serviços automatizados e dados escalonáveis.
- 
-Os serviços provisionam e configuram a infraestrutura usada para executar aplicativos.
- 
-O Google Cloud disponibiliza essa solução para todos do clientes.
- 
-Acreditamos que, no futuro, todas as empresas poderão usar a tecnologia para se destacar.
- 
-Cada vez mais, essa tecnologia será fornecida como software. Um bom software usa dados de alta qualidade.
- 
-Isso significa que todas as organizações poderão ser empresas de dados.
+Há alguns anos, o Google percebeu que não poderia crescer rapidamente usando um modelo de virtualização. Dessa forma, migraram para uma arquitetura baseada em contêiner, com uma nuvem automatizada e flexível. Ela combina serviços automatizados e dados escalonáveis. Os serviços provisionam e configuram a infraestrutura usada para executar aplicativos. O Google Cloud disponibiliza essa solução para todos do clientes.
 
-## IaaS e PaaS
+Acredita-se que, no futuro, todas as empresas poderão usar a tecnologia para se destacar. Cada vez mais, essa tecnologia será fornecida como software. Um bom software usa dados de alta qualidade. Isso significa que todas as organizações poderão ser empresas de dados.
+
+## Infraestrutura como Serviço (IaaS) e Plataforma como Serviço (PaaS)
 
 A migração para data centers virtualizados, gerou dois tipos de oferta aos clientes: infraestrutura como serviço, chamada de IaaS, e plataforma como serviço, ou PaaS.
 
-IaaS oferece recursos brutos de computação, armazenamento e rede organizados virtualmente em recursos semelhantes a data centers.
+IaaS oferece recursos brutos de computação, armazenamento e rede organizados virtualmente em recursos semelhantes a data centers. No modelo IaaS, os clientes pagam pelos recursos antecipadamente. 
 
-O modelo PaaS oferece acesso a toda a infraestrutura de que o aplicativo precisa. Com o PaaS, podemos focar na lógica do aplicativo.
+O modelo PaaS oferece acesso a toda a infraestrutura de que o aplicativo precisa. Com o PaaS, podemos focar na lógica do aplicativo, neste modelo os clientes pagam pelos recursos que usam.
 
-No modelo IaaS, os clientes pagam pelos recursos antecipadamente. No modelo de PaaS, os clientes pagam pelos recursos que usam.
+Com a evolução da computação em nuvem, o foco passou para infraestruturas e serviços gerenciados. Assim, com recursos e serviços gerenciados, as empresas podem focar nas metas de negócios e economizar dinheiro e tempo na criação e manutenção de infraestrutura técnica. Como resultado, elas atendem aos clientes com mais rapidez e confiança.
 
-Com a evolução da computação em nuvem, o foco passou para infraestruturas e serviços gerenciados.
+A infraestrutura sem servidor também faz parte dessa evolução. Com ela, os desenvolvedores se concentram no código, e não na configuração do servidor porque eles não precisam gerenciar a infraestrutura. As tecnologias sem servidor incluem o Cloud Functions, que gerencia códigos orientado a eventos e o Cloud Run, que possibilita microsserviços conteinerizados em um ambiente totalmente gerenciado.
 
-Com recursos e serviços gerenciados, as empresas podem focar nas metas de negócios e economizar dinheiro e tempo na criação e manutenção de infraestrutura técnica.
-
-Como resultado, elas atendem aos clientes com mais rapidez e confiança.
-
-A infraestrutura sem servidor também faz parte dessa evolução. Com ela, os desenvolvedores se concentram no código, e não na configuração do servidor porque eles não precisam gerenciar a infraestrutura.
-
-As tecnologias sem servidor incluem o Cloud Functions, que gerencia códigos orientado a eventos e o Cloud Run, que possibilita microsserviços conteinerizados em um ambiente totalmente gerenciado.
-
-Talvez você já tenha ouvido falar de software como serviço, ou SaaS, mas não saiba o que isso significa.
-
-Os aplicativos desse modelo não são instalados no computador. Eles são executados na nuvem e podem ser acessados pela Internet.
-
-Aplicativos conhecidos do Google como Gmail, Documentos e Drive, que fazem parte do Google Workspace, são exemplos de SaaS.
+Talvez você já tenha ouvido falar de software como serviço, ou SaaS, mas não saiba o que isso significa. Os aplicativos desse modelo não são instalados no computador. Eles são executados na nuvem e podem ser acessados pela Internet. Gmail, Docments e Drive, são exemplos de SaaS.
 
 ## A rede do Google Cloud
 
