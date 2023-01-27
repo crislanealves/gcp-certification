@@ -23,23 +23,17 @@ Acredita-se que, no futuro, todas as empresas poderão usar a tecnologia para se
 
 A migração para data centers virtualizados, gerou dois tipos de oferta aos clientes: infraestrutura como serviço, chamada de IaaS, e plataforma como serviço, ou PaaS.
 
-IaaS oferece recursos brutos de computação, armazenamento e rede organizados virtualmente em recursos semelhantes a data centers. No modelo IaaS, os clientes pagam pelos recursos antecipadamente. 
-
-O modelo PaaS oferece acesso a toda a infraestrutura de que o aplicativo precisa. Com o PaaS, podemos focar na lógica do aplicativo, neste modelo os clientes pagam pelos recursos que usam.
+IaaS oferece recursos brutos de computação, armazenamento e rede organizados virtualmente em recursos semelhantes a data centers. No modelo IaaS, os clientes pagam pelos recursos antecipadamente. O modelo PaaS oferece acesso a toda a infraestrutura de que o aplicativo precisa. Com o PaaS, podemos focar na lógica do aplicativo, neste modelo os clientes pagam pelos recursos que usam.
 
 Com a evolução da computação em nuvem, o foco passou para infraestruturas e serviços gerenciados. Assim, com recursos e serviços gerenciados, as empresas podem focar nas metas de negócios e economizar dinheiro e tempo na criação e manutenção de infraestrutura técnica. Como resultado, elas atendem aos clientes com mais rapidez e confiança.
 
 A infraestrutura sem servidor também faz parte dessa evolução. Com ela, os desenvolvedores se concentram no código, e não na configuração do servidor porque eles não precisam gerenciar a infraestrutura. As tecnologias sem servidor incluem o Cloud Functions, que gerencia códigos orientado a eventos e o Cloud Run, que possibilita microsserviços conteinerizados em um ambiente totalmente gerenciado.
 
-Talvez você já tenha ouvido falar de software como serviço, ou SaaS, mas não saiba o que isso significa. Os aplicativos desse modelo não são instalados no computador. Eles são executados na nuvem e podem ser acessados pela Internet. Gmail, Docments e Drive, são exemplos de SaaS.
+Talvez você já tenha ouvido falar de software como serviço, ou SaaS, mas não saiba o que isso significa. Os aplicativos desse modelo não são instalados no computador, eles são executados na nuvem e podem ser acessados pela Internet. O Gmail, Docments e Drive, são exemplos de SaaS.
 
 ## A rede do Google Cloud
 
-O Google Cloud é executado na rede global do Google.
-
-A rede do Google é a maior do mundo e foram investidos bilhões de dólares para criá-la.
-
-Ela foi criada para fornecer a maior capacidade de processamento e a menor latência possível, usando mais de 100 nós de cache de conteúdo no mundo todo.
+O Google Cloud é executado na rede global do Google, que é a maior do mundo e foram investidos bilhões de dólares para criá-la. Ela foi criada para fornecer a maior capacidade de processamento e a menor latência possível, usando mais de 100 nós de cache de conteúdo no mundo todo.
 
 Nos caches, conteúdos com alta demanda são armazenados para que os aplicativos respondam a solicitações de usuários rapidamente.
 
