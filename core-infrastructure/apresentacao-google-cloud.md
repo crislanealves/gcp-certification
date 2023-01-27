@@ -33,14 +33,6 @@ Talvez você já tenha ouvido falar de software como serviço, ou SaaS, mas não
 
 ## A rede do Google Cloud
 
-O Google Cloud é executado na rede global do Google, que é a maior do mundo e foram investidos bilhões de dólares para criá-la. Ela foi criada para fornecer a maior capacidade de processamento e a menor latência possível, usando mais de 100 nós de cache de conteúdo no mundo todo.
+O Google Cloud é executado na rede global do Google, que é a maior do mundo e foram investidos bilhões de dólares para criá-la. Ela foi criada para fornecer a maior capacidade de processamento e a menor latência possível, usando mais de 100 nós de cache de conteúdo no mundo todo. Nos caches, conteúdos com alta demanda são armazenados para que os aplicativos respondam a solicitações de usuários rapidamente.
 
-Nos caches, conteúdos com alta demanda são armazenados para que os aplicativos respondam a solicitações de usuários rapidamente.
-
-A infraestrutura do Google Cloud é baseada em cinco locais principais: América do Norte, América do Sul, Europa, Ásia e Austrália,
-
-Ter vários locais é importante porque escolher onde colocar aplicativos afeta a disponibilidade, a durabilidade e a latência. A latência mede o tempo que um pacote de informações leva para viajar da origem ao destino.
-
-Cada local é dividido em várias regiões e zonas diferentes.
-
-Regiões representam áreas geográficas independentes compostas por zonas.
+A infraestrutura do Google Cloud é baseada em cinco locais principais: América do Norte, América do Sul, Europa, Ásia e Austrália. Ter vários locais é importante porque escolher onde colocar aplicativos afeta a disponibilidade, a durabilidade e a latência. A latência mede o tempo que um pacote de informações leva para viajar da origem ao destino. Cada local é dividido em várias regiões e zonas diferentes. Regiões representam áreas geográficas independentes compostas por zonas.
