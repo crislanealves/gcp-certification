@@ -24,15 +24,15 @@ Um bom software usa dados de alta qualidade e isso significa que todas as organi
 
 ## Infraestrutura como Serviço (IaaS) e Plataforma como Serviço (PaaS)
 
-A migração para data centers virtualizados, gerou dois tipos de oferta aos clientes: infraestrutura como serviço, chamada de IaaS, e plataforma como serviço, ou PaaS.
+A migração para data centers virtualizados, gerou dois tipos de oferta aos clientes: **Infraestrutura como Serviço (IaaS)** e **Plataforma como Serviço (PaaS)**.
 
-IaaS oferece recursos brutos de computação, armazenamento e rede organizados virtualmente em recursos semelhantes a data centers. No modelo IaaS, os clientes pagam pelos recursos antecipadamente. O modelo PaaS oferece acesso a toda a infraestrutura de que o aplicativo precisa. Com o PaaS, podemos focar na lógica do aplicativo, neste modelo os clientes pagam pelos recursos que usam.
+Infraestrutura como Serviço, oferece recursos brutos de computação, armazenamento e rede organizados virtualmente em recursos semelhantes a data centers. Nesse modelo, os clientes pagam pelos recursos antecipadamente. Já o modelo de Plataforma como Serviço, oferece acesso a toda a infraestrutura de que o aplicativo precisa. Nessa estrutura, podemos focar na lógica do aplicativo e os clientes pagam pelos recursos que usam.
 
-Com a evolução da computação em nuvem, o foco passou para infraestruturas e serviços gerenciados. Assim, com recursos e serviços gerenciados, as empresas podem focar nas metas de negócios e economizar dinheiro e tempo na criação e manutenção de infraestrutura técnica. Como resultado, elas atendem aos clientes com mais rapidez e confiança.
+Com a evolução da computação em nuvem, o foco passou para infraestruturas e serviços gerenciados. Assim, as empresas podem focar nas metas de negócios e economizar dinheiro e tempo na criação e manutenção de infraestrutura técnica. Como resultado, elas atendem aos clientes com mais rapidez e confiança.
 
-A infraestrutura sem servidor também faz parte dessa evolução. Com ela, os desenvolvedores se concentram no código, e não na configuração do servidor porque eles não precisam gerenciar a infraestrutura. As tecnologias sem servidor incluem o Cloud Functions, que gerencia códigos orientado a eventos e o Cloud Run, que possibilita microsserviços conteinerizados em um ambiente totalmente gerenciado.
+A infraestrutura sem servidor também faz parte dessa evolução. Com ela, os desenvolvedores se concentram no código e não na configuração do servidor porque eles não precisam gerenciar a infraestrutura. As tecnologias sem servidores incluem, por exemplo, o Cloud Functions, que gerencia códigos orientado a eventos e o Cloud Run, que possibilita microsserviços conteinerizados em um ambiente totalmente gerenciado.
 
-Talvez você já tenha ouvido falar de software como serviço, ou SaaS, mas não saiba o que isso significa. Os aplicativos desse modelo não são instalados no computador, eles são executados na nuvem e podem ser acessados pela Internet. O Gmail, Docments e Drive, são exemplos de SaaS.
+Talvez você já tenha ouvido falar de software como serviço, ou SaaS, mas não saiba o que isso significa. Os aplicativos desse modelo não são instalados no computador, eles são executados na nuvem e podem ser acessados pela Internet. O Gmail, Documents e Drive, são exemplos de aplicativos SaaS.
 
 ## A rede do Google Cloud
 
