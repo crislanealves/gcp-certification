@@ -2,14 +2,16 @@
 
 Nuvem é um tema em alta hoje em dia, mas o que é isso?
 
-O NIST dos EUA criou o termo "computação em nuvem", mas ela existe em muitos países. A computação em nuvem é uma maneira de usar a tecnologia da informação e tem cinco características importantes, são elas:
-1. Os clientes recebem recursos de computação on demand e com autoatendimento.Eles recebem o processamento, o armazenamento e a rede de que precisam, sem intervenção humana.
+A computação em nuvem é uma maneira de usar a tecnologia da informação e tem cinco características importantes, são elas:
+1. Os clientes recebem recursos de computação como processamento, armazenamento e a rede de que precisam, sem intervenção humana e com autoatendimento.
 2. Os clientes acessam esses recursos pela Internet de qualquer lugar.
-3. O fornecedor de nuvem tem um enorme pool de recursos e os aloca a usuários fora desse pool. Assim, o fornecedor compra em lotes e repassa a economia para os clientes. Os clientes não precisam se preocupar com o local físico desses recursos.
-4. Os recursos são flexíveis, como as necessidades dos clientes. Eles podem acessar novos recursos rapidamente. Eles também podem diminuí-los.
-5. E por fim, os clientes pagam apenas o que usam conforme a necessidade. Eles não pagam por recursos que não usam.
+3. O fornecedor de nuvem tem um enorme pool de recursos e os aloca a usuários fora desse pool. Assim, o fornecedor compra em lotes e repassa a economia para os clientes. E, os clientes não precisam se preocupar com o local físico desses recursos.
+4. Os recursos são flexíveis, como as necessidades dos clientes. Eles podem acessar novos recursos rapidamente e ajusta-los de acordo com a necessidade.
+5. E, por fim, os clientes pagam apenas o que usam conforme a necessidade. Ou seja, não pagam por recursos que não usam.
 
-E pronto. Essa é a definição de nuvem. Mas por que o modelo de nuvem é tão atraente? Vamos voltar no tempo para entender.
+E pronto. Essa é a definição de nuvem. 
+
+Mas por que o modelo de nuvem é tão atraente? Vamos voltar no tempo para entender.
  
 A tendência da computação em nuvem começou com um recurso chamado _colocation_. Ele oferecia a eficiência financeira de alugar data centers físicos como alternativa de investir em um. Os data centers virtualizados que existem hoje têm semelhanças com os data centers e as instalações de _colocation_ daquela época.
 
@@ -17,7 +19,8 @@ Os data centers virtualizados têm os elementos fundamentais da computação hos
  
 Há alguns anos, o Google percebeu que não poderia crescer rapidamente usando um modelo de virtualização. Dessa forma, migraram para uma arquitetura baseada em contêiner, com uma nuvem automatizada e flexível. Ela combina serviços automatizados e dados escalonáveis. Os serviços provisionam e configuram a infraestrutura usada para executar aplicativos. O Google Cloud disponibiliza essa solução para todos do clientes.
 
-Acredita-se que, no futuro, todas as empresas poderão usar a tecnologia para se destacar. Cada vez mais, essa tecnologia será fornecida como software. Um bom software usa dados de alta qualidade. Isso significa que todas as organizações poderão ser empresas de dados.
+Acredita-se que, no futuro, todas as empresas poderão usar a tecnologia para se destacar. E, cada vez mais, essa tecnologia será fornecida como software. 
+Um bom software usa dados de alta qualidade e isso significa que todas as organizações poderão ser empresas de dados.
 
 ## Infraestrutura como Serviço (IaaS) e Plataforma como Serviço (PaaS)
 
