@@ -39,7 +39,7 @@ No nível superior, está a organização, que inclui todos os projetos, pastas 
 
 Existem papéis especiais associados à organização. É possível designar o papel de Administrador de políticas da organização e só pessoas com esse papel podem alterar as políticas. Tem também o papel de Criador de projetos que é bom para controlar quem pode criar projetos e fazer gastos.
 
-Você também pode usar o Cloud Identity, a plataforma de gerenciamento de identidade, para criar uma organização. Quando criada, a organização permite que qualquer pessoa no domínio crie projetos e contas de faturamento. Também é possível criar e incluir projetos em pastas abaixo da organização;
+Você também pode usar o Cloud Identity, a plataforma de gerenciamento de identidade, para criar uma organização. Quando criada, a organização permite que qualquer pessoa no domínio crie projetos e contas de faturamento. Também é possível criar e incluir projetos em pastas abaixo da organização.
 Pastas e projetos são considerados filhos da organização.
 
 É importante entender essa hierarquia porque ela se relaciona com as políticas aplicadas no Google Cloud. Essas políticas podem ser definidas no nível do projeto, da pasta e da organização. Alguns serviços do Google Cloud permitem aplicar políticas a recursos individuais.
