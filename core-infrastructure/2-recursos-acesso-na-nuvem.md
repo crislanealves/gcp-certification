@@ -2,11 +2,10 @@
 
 # **Hierarquia de recursos do Google Cloud**
 
-A hierarquia de recursos do Google Cloud tem 4 níveis:
+A hierarquia de recursos do Google Cloud tem 4 níveis, de baixo para cima, eles são: recursos, projetos, pastas e organização.:
 
 ![image](https://user-images.githubusercontent.com/58278652/215269983-aac4e79c-77ce-4770-b788-a308a4e28a9b.png)
 
-De baixo para cima, eles são: recursos, projetos, pastas e organização.
 
 **Recursos:**
 
