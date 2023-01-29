@@ -77,3 +77,31 @@ Primeiro, é preciso gerenciar as permissões que definem o papel personalizado.
 
 Segundo, esses papéis só podem ser aplicados no nível do projeto ou da organização. Eles não podem ser aplicados no nível da pasta.
 
+## Contas de serviço 
+
+E se você quiser conceder permissões personalizadas a uma VM em vez de uma pessoa? As contas de serviço são para isso.
+
+Imagine que um aplicativo da sua VM precisa armazenar dados no Cloud Storage e você não quer que ninguém tenha acesso aos dados, apenas uma VM em particular. É possível criar uma conta de serviço para autenticar a VM no Cloud Storage.
+
+Contas de serviço têm endereço de e-mail, mas em vez de senhas elas usam chaves criptográficas.
+
+Se uma conta de serviço tem o papel de administrador da instância do GCE, isso permite que o aplicativo com a conta de serviço crie, modifique ou exclua outras VMs.
+
+Além disso, contas de serviço precisam ser gerenciadas. Talvez Alice precise gerenciar qual conta pode agir como conta de serviço, enquanto Bob precisa apenas ver uma lista de contas de serviço. Além de ser uma identidade, uma conta de serviço também é um recurso. Então ela pode ter as próprias políticas do IAM.
+
+Isso significa que Alice pode ter o papel de editor e Bob o papel de leitor. É como conceder papéis para qualquer outro recurso do Google Cloud.
+
+## Cloud Identity 
+
+Quando um novo cliente começa a usar a plataforma, ele faz o login no Console do Google Cloud com uma conta do Gmail e usa os Grupos do Google para colaborar com colegas de equipe.
+
+Esse método é fácil no início, mas pode gerar alguns desafios porque as identidades não são gerenciadas centralmente. Isso pode ser problemático se alguém deixar a organização. Com essa configuração não há maneira fácil de remover imediatamente o acesso do usuário.
+
+Com a ferramenta Cloud Identity, as organizações podem definir políticas e gerenciar usuários e grupos usando o Google Admin Console.
+
+Administradores podem fazer login<b> </b>e gerenciar recursos com os nomes de usuário e senhas que já utilizam nos sistemas LDAP ou Active Directory existentes.
+
+Usando o Cloud Identity, quando alguém deixa a organização, o administrador pode desativar a conta do usuário e removê-la dos grupos.
+
+O Cloud Identity está disponível em uma versão sem custos e uma premium com funcionalidades para dispositivos móveis. Se você é um cliente do Google Cloud e também do Google Workspace, ela já está disponível para você no Google Admin Console.
+
