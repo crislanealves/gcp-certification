@@ -13,9 +13,7 @@ No primeiro nível estão os recursos. Eles representam serviços como máquinas
 
 **Projetos:**
 
-Idealmente os projetos são organizados em pastas/subpastas, apesar de não ser obrigatório a existência de pastas para criação de um projeto. 
-
-No entanto, é obrigatório a existencia de um projeto para utilizar a maioria dos recursos dentro do GCP. Os projetos viabilizam o uso dos serviços do Google Cloud, como o gerenciamento de APIs, faturamento, adição e remoção de colaboradores e muitos outros serviços.
+Idealmente os projetos são organizados em pastas/subpastas, apesar de não ser obrigatório a existência de pastas para criação de um projeto. No entanto, é obrigatório a existencia de um projeto para utilizar a maioria dos recursos dentro do GCP. Os projetos viabilizam o uso dos serviços do Google Cloud, como o gerenciamento de APIs, faturamento, adição e remoção de colaboradores e muitos outros serviços.
 
 Cada projeto é uma entidade separada na organização e cada recurso pertence a apenas um projeto. Eles têm vários proprietários e usuários pois são faturados e gerenciados separadamente. 
 
