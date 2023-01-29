@@ -1,6 +1,6 @@
-## Recursos e acesso na nuvem
+# Recursos e acesso na nuvem
 
-# **Hierarquia de recursos do Google Cloud**
+## **Hierarquia de recursos do Google Cloud**
 
 A hierarquia de recursos do Google Cloud tem 4 níveis, de baixo para cima, eles são: recursos, projetos, pastas e organização.:
 
@@ -44,5 +44,36 @@ Pastas e projetos são considerados filhos da organização.
 
 É importante entender essa hierarquia porque ela se relaciona com as políticas aplicadas no Google Cloud. Essas políticas podem ser definidas no nível do projeto, da pasta e da organização. Alguns serviços do Google Cloud permitem aplicar políticas a recursos individuais.
 
+## Identity Access Management (IAM)
 
+Quando o nó da organização tem muitas pastas, projetos e recursos, é necessário restringir quem tem acesso ao quê. Para ajudar nessa tarefa, os administradores podem usar o IAM.
+Com o IAM, eles aplicam políticas que definem quem pode fazer o quê e em quais recursos.
+O "quem" da política do IAM pode ser uma Conta ou Grupo do Google, uma conta de serviço ou um domínio do Cloud Identity.
+O tipo de papel define o que cada um pode fazer. Um papel é um conjunto de permissões. Por exemplo, para gerenciar as instâncias de VM de um projeto, você precisa poder criar, excluir, iniciar, interromper e alterar as máquinas virtuais. Essas permissões são agrupadas em um papel, facilitando a compreensão e o gerenciamento.
+Se um usuário, grupo ou conta de serviço tem um papel em um elemento específico da hierarquia do recurso, ele se aplica ao elemento escolhido e aos elementos abaixo dele na hierarquia.
+Há três tipos de papéis no IAM: básico, predefinido e personalizado.
+O primeiro tipo é o básico. Os papéis básicos têm um escopo amplo. Quando aplicados a um projeto, eles afetam todos os recursos do projeto.
+Os papéis básicos incluem proprietário, editor, leitor, administrador de faturamento.
+Vamos aprender mais sobre esses papéis. Leitores podem acessar recursos, mas sem fazer alterações.
+Editores podem acessar e fazer alterações.
+Proprietários podem acessar e fazer alterações em um recurso, além de poderem gerenciar papéis e permissões associados e configurar o faturamento.
+Muitas empresas querem que o responsável pelo controle do faturamento não tenha permissão para alterar os recursos. Por isso temos o papel de Administrador de faturamento.
+
+Atenção: Em projetos com várias pessoas e dados confidenciais, papéis básicos são amplos demais. O Cloud IAM fornece outras maneiras de atribuir permissões personalizadas especificamente para atender às necessidades do projeto. Isso nos leva ao segundo tipo de papel, o predefinido.
+
+Serviços específicos oferecem conjuntos de papéis predefinidos e indicam quando eles podem ser aplicados.
+
+Vamos ver o Compute Engine, um produto que oferece o serviço de máquina virtual.
+
+Com ele, é possível aplicar papéis predefinidos específicos, como “instanceAdmin”, aos recursos do Compute Engine em um projeto, pasta ou em toda a organização.
+
+Quem tem esse papel pode executar um conjunto específico de ações predefinidas.
+
+E se você precisar atribuir um papel com permissões mais específicas? Você vai usar o papel personalizado. Muitas empresas usam o modelo de privilégio mínimo, em que cada pessoa tem o mínimo de privilégios necessários para trabalhar. Talvez você queira definir um papel de "Operador de instâncias" para permitir que alguns usuários iniciem e interrompam as VMs, mas sem poder reconfigurá-las. Você pode definir as permissões com papéis personalizados.
+
+Antes de começar a criar esses papéis, observe dois detalhes.
+
+Primeiro, é preciso gerenciar as permissões que definem o papel personalizado. Por isso, algumas organizações preferem usar os papéis predefinidos.
+
+Segundo, esses papéis só podem ser aplicados no nível do projeto ou da organização. Eles não podem ser aplicados no nível da pasta.
 
