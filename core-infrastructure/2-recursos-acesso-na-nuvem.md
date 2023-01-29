@@ -46,32 +46,19 @@ Pastas e projetos são considerados filhos da organização.
 
 ## Identity Access Management (IAM)
 
-Quando o nó da organização tem muitas pastas, projetos e recursos, é necessário restringir quem tem acesso ao quê. Para ajudar nessa tarefa, os administradores podem usar o IAM.
-Com o IAM, eles aplicam políticas que definem quem pode fazer o quê e em quais recursos.
-O "quem" da política do IAM pode ser uma Conta ou Grupo do Google, uma conta de serviço ou um domínio do Cloud Identity.
-O tipo de papel define o que cada um pode fazer. Um papel é um conjunto de permissões. Por exemplo, para gerenciar as instâncias de VM de um projeto, você precisa poder criar, excluir, iniciar, interromper e alterar as máquinas virtuais. Essas permissões são agrupadas em um papel, facilitando a compreensão e o gerenciamento.
-Se um usuário, grupo ou conta de serviço tem um papel em um elemento específico da hierarquia do recurso, ele se aplica ao elemento escolhido e aos elementos abaixo dele na hierarquia.
-Há três tipos de papéis no IAM: básico, predefinido e personalizado.
-O primeiro tipo é o básico. Os papéis básicos têm um escopo amplo. Quando aplicados a um projeto, eles afetam todos os recursos do projeto.
-Os papéis básicos incluem proprietário, editor, leitor, administrador de faturamento.
-Vamos aprender mais sobre esses papéis. Leitores podem acessar recursos, mas sem fazer alterações.
-Editores podem acessar e fazer alterações.
-Proprietários podem acessar e fazer alterações em um recurso, além de poderem gerenciar papéis e permissões associados e configurar o faturamento.
-Muitas empresas querem que o responsável pelo controle do faturamento não tenha permissão para alterar os recursos. Por isso temos o papel de Administrador de faturamento.
+Quando o nó da organização tem muitas pastas, projetos e recursos, é necessário restringir quem tem acesso ao quê, a ferramenta do IAM trata justamente desses casos. Com o IAM, é possível aplicar políticas que definem quem pode fazer o quê e em quais recursos. O "quem" da política do IAM pode ser uma Conta ou Grupo do Google, uma conta de serviço ou um domínio do Cloud Identity. 
 
-Atenção: Em projetos com várias pessoas e dados confidenciais, papéis básicos são amplos demais. O Cloud IAM fornece outras maneiras de atribuir permissões personalizadas especificamente para atender às necessidades do projeto. Isso nos leva ao segundo tipo de papel, o predefinido.
+O tipo de papel define o que cada um pode fazer (um papel é um conjunto de permissões). Por exemplo, para gerenciar as instâncias de uma máquina virtual em um projeto, você precisa poder criar, excluir, iniciar, interromper e alterar as máquinas virtuais. Essas permissões são agrupadas em um papel, facilitando a compreensão e o gerenciamento. Se um usuário, grupo ou conta de serviço tem um papel em um elemento específico da hierarquia do recurso, ele se aplica ao elemento escolhido e aos elementos abaixo dele na hierarquia. 
 
-Serviços específicos oferecem conjuntos de papéis predefinidos e indicam quando eles podem ser aplicados.
+Há três tipos de papéis no IAM: básico, predefinido e personalizado. Os papéis básicos têm um escopo amplo, quando aplicados a um projeto, eles afetam todos os recursos do projeto. Os papéis básicos incluem proprietário, editor, leitor, administrador de faturamento, etc. Leitores podem acessar recursos, mas sem fazer alterações. Editores podem acessar e fazer alterações. Proprietários podem acessar e fazer alterações em um recurso, além de poderem gerenciar papéis e permissões associados e configurar o faturamento. Muitas empresas querem que o responsável pelo controle do faturamento não tenha permissão para alterar os recursos, por isso existe o papel de Administrador de faturamento.
 
-Vamos ver o Compute Engine, um produto que oferece o serviço de máquina virtual.
+**Um ponto de atenção:** em projetos com várias pessoas e dados confidenciais, papéis básicos são amplos demais. O Cloud IAM fornece outras maneiras de atribuir permissões personalizadas especificamente para atender às necessidades do projeto. Isso nos leva ao segundo tipo de papel, o predefinido.
 
-Com ele, é possível aplicar papéis predefinidos específicos, como “instanceAdmin”, aos recursos do Compute Engine em um projeto, pasta ou em toda a organização.
+Serviços específicos oferecem conjuntos de papéis predefinidos e indicam quando eles podem ser aplicados. É possível aplicar papéis predefinidos específicos, como “instanceAdmin”, aos recursos do Compute Engine em um projeto, pasta ou em toda a organização. Isso permite que quem tiver esse papel pode executar um conjunto específico de ações predefinidas.
 
-Quem tem esse papel pode executar um conjunto específico de ações predefinidas.
+E caso seja necessário atribuir um papel com permissões mais específicas? Daí você vai usar o papel personalizado. Muitas empresas usam o modelo de privilégio mínimo, em que cada pessoa tem o mínimo de privilégios necessários para trabalhar. Talvez você queira definir um papel de "Operador de instâncias" para permitir que alguns usuários iniciem e interrompam máquinas virtuais, por exemplo, mas sem poder reconfigurá-las. Você pode definir as permissões com papéis personalizados.
 
-E se você precisar atribuir um papel com permissões mais específicas? Você vai usar o papel personalizado. Muitas empresas usam o modelo de privilégio mínimo, em que cada pessoa tem o mínimo de privilégios necessários para trabalhar. Talvez você queira definir um papel de "Operador de instâncias" para permitir que alguns usuários iniciem e interrompam as VMs, mas sem poder reconfigurá-las. Você pode definir as permissões com papéis personalizados.
-
-Antes de começar a criar esses papéis, observe dois detalhes.
+**Dois detalhes são importantes:**
 
 Primeiro, é preciso gerenciar as permissões que definem o papel personalizado. Por isso, algumas organizações preferem usar os papéis predefinidos.
 
@@ -105,3 +92,24 @@ Usando o Cloud Identity, quando alguém deixa a organização, o administrador p
 
 O Cloud Identity está disponível em uma versão sem custos e uma premium com funcionalidades para dispositivos móveis. Se você é um cliente do Google Cloud e também do Google Workspace, ela já está disponível para você no Google Admin Console.
 
+## Interação com o Google Cloud
+
+Há 4 maneiras de acessar e interagir com o Google Cloud: o Console do Cloud, o SDK Cloud e o Cloud Shell, as APIs e o app Console do Cloud para dispositivos móveis. Vamos explorar cada uma delas.
+
+A primeira é o Console do Google Cloud, uma interface gráfica do usuário que ajuda você a implantar, escalonar e diagnosticar problemas na produção em uma interface baseada na Web.
+
+Com o Console do Cloud, você encontra facilmente seus recursos, verifica a integridade deles, controla o gerenciamento e define orçamentos para controlar os gastos. O Console também tem um mecanismo de pesquisa para encontrar recursos e se conectar a instâncias via SSH no navegador.
+
+A segunda maneira é pelo SDK Cloud e o Cloud Shell. O SDK Cloud tem ferramentas para gerenciar recursos e aplicativos hospedados no Google Cloud. Ele tem a ferramenta gcloud, que fornece a principal CLI de produtos e serviços do Google Cloud, gsutil, que permite o acesso ao Cloud Storage a partir da linha de comando e bq, uma ferramenta de linha de comando para o BigQuery.
+
+Todas as ferramentas instaladas no SDK Cloud ficam no diretório bin.
+
+O Cloud Shell concede acesso a recursos usando a linha de comando diretamente do navegador. Ele é uma máquina virtual baseada em Debian com diretório principal permanente de 5 GB. Isso facilita o gerenciamento de projetos e recursos. Com o Cloud Shell, você tem a ferramenta gcloud do SDK Cloud e outros utilitários sempre instalados, disponíveis, atualizados e totalmente autenticados.
+
+A terceira maneira de acesso é pela interface de programação do aplicativo, ou API. Os serviços que compõem o Google Cloud oferecem APIs, para você controlar o ambiente usando código. O Console tem uma ferramenta chamada APIs Explorer do Google que mostra quais APIs estão disponíveis e as versões. Você pode testar essas APIs, mesmo as que exigem autenticação do usuário.
+
+Imagine que você testou uma API e está pronto para criar um aplicativo. É preciso programar do zero? Não. O Google oferece bibliotecas de cliente do Cloud e bibliotecas de cliente de APIs do Google em várias linguagens para eliminar o trabalho árduo de chamar o Google Cloud com o código. As linguagens representadas atualmente nessas bibliotecas são Java, Python, PHP, C#, Go, Node.js, Ruby e C++ .
+
+A quarta maneira de acessar e interagir com o Google Cloud é com o Console do Cloud para dispositivos móveis, que pode ser usado para iniciar, interromper e usar o SSH para se conectar a instâncias do Compute Engine e ver os registros delas. Com ele você inicia e para instâncias do Cloud SQL. Além disso, você pode administrar aplicativos implantados no App Engine, visualizar erros, reverter implantações e alterar a divisão de tráfego.
+
+O app Console do Cloud oferece informações de faturamento atualizadas e alertas para projetos que excedem o orçamento. Também é possível configurar gráficos com as principais métricas, como uso de CPU, uso de rede, solicitações por segundo e erros de servidor. O app também oferece alertas e gerenciamento de incidentes. 
